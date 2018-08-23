@@ -56,6 +56,8 @@ save.onclick = function(){
 }
 /*****选择画笔颜色*******/
 black.onclick = function(){
+    eraserEnabled = false
+    eraser.classList.remove('active')
     context.strokeStyle = 'black'
     black.classList.add('active')
     red.classList.remove('active')
@@ -64,6 +66,8 @@ black.onclick = function(){
     pink.classList.remove('active')
 }
 red.onclick = function(){
+    eraserEnabled = false
+    eraser.classList.remove('active')
     context.strokeStyle = 'red'
     black.classList.remove('active')
     red.classList.add('active')
@@ -72,6 +76,8 @@ red.onclick = function(){
     pink.classList.remove('active')
 }
 pink.onclick = function(){
+    eraserEnabled = false
+    eraser.classList.remove('active')
     context.strokeStyle = 'pink'
     black.classList.remove('active')
     red.classList.remove('active')
@@ -80,6 +86,8 @@ pink.onclick = function(){
     pink.classList.add('active')
 }
 green.onclick = function(){
+    eraserEnabled = false
+    eraser.classList.remove('active')
     context.strokeStyle = 'green'
     black.classList.remove('active')
     red.classList.remove('active')
@@ -88,6 +96,8 @@ green.onclick = function(){
     pink.classList.remove('active')
 }
 blue.onclick = function(){
+    eraserEnabled = false
+    eraser.classList.remove('active')
     context.strokeStyle = 'blue'
     black.classList.remove('active')
     red.classList.remove('active')

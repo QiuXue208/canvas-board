@@ -1,6 +1,7 @@
 var canvas = document.getElementById('canvas')
 //获取画布上下文
 var context = canvas.getContext('2d')
+context.strokeStyle = 'black'
 //获取各种标签
 var eraser = document.getElementById('eraser')
 var brush = document.getElementById('brush')
@@ -108,7 +109,6 @@ blue.onclick = function(){
     green.classList.remove('active')
     pink.classList.remove('active')
 }
-
 
 function autoSetCanvasSize() {
     //设置canvas宽高，其为窗口宽度

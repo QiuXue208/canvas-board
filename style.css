@@ -27,7 +27,7 @@ body{overflow: hidden;background:rgb(241, 239, 239);}
 }
 .actions svg.active{
     fill:rgb(255, 132, 153);
-    transform: scale(1.2);/*放大1.2倍*/
+    transform: scale(1.1);/*放大1.2倍*/
 }
 .actions > svg.act,
 .action > svg.save{
@@ -52,14 +52,10 @@ body{overflow: hidden;background:rgb(241, 239, 239);}
     overflow: hidden;
  }
  .colors{
-    /* position:fixed;
-     top:160px;
-     left:12px;*/
      position:fixed;
      top:0px;
      left:45px;
  }
-
  .colors > li{
      width:16px;
      height:16px;

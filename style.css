@@ -9,13 +9,13 @@ body{overflow: hidden;background:rgb(241, 239, 239);}
 .container{
     margin-left:5px;
     margin-top:3px;
-    width:75px;
-    height:210px;
+    width:65px;
+    height:163px;
     box-shadow: 0 0 1px rgba(0,0,0,0.25);
 }
 .actions > svg{
     transition:all 0.3s;/*颜色渐变*/
-    margin-bottom: 21.5px;
+    margin-bottom: 8px;
 }
 .actions > #brush{
     width:1.5em;
@@ -56,16 +56,16 @@ body{overflow: hidden;background:rgb(241, 239, 239);}
      top:160px;
      left:12px;*/
      position:fixed;
-     top:-16px;
-     left:55px;
+     top:0px;
+     left:45px;
  }
 
  .colors > li{
-     width:17px;
-     height:17px;
+     width:16px;
+     height:16px;
      border-radius:50%;
      box-shadow: 0 0 3px rgba(0,0,0,0.2);
-     margin:28px 0;
+     margin:15px 0;
      transition: all 0.3s;
  }
  .colors > li.black{
@@ -85,5 +85,5 @@ body{overflow: hidden;background:rgb(241, 239, 239);}
  }
  .colors > li.active{
     box-shadow: 0 0 3px rgba(0,0,0,0.97); 
-    transform: scale(1.2);
+    transform: scale(1.1);
  }

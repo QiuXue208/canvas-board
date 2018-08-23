@@ -1,0 +1,89 @@
+*{margin:0;padding:0;}
+ol,ul{list-style: none;}
+body{overflow: hidden;background:rgb(241, 239, 239);}
+.canvas{display:block;position:fixed;left:0;top:0;}
+.actions{position:fixed;left:0;
+    top:0;
+    padding:10px;
+}
+.container{
+    margin-left:5px;
+    margin-top:3px;
+    width:75px;
+    height:210px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+}
+.actions > svg{
+    transition:all 0.3s;/*颜色渐变*/
+    margin-bottom: 21.5px;
+}
+.actions > #brush{
+    width:1.5em;
+    height:1.5em;
+}
+.actions > #thickBrush{
+    width:1.35em;
+    height:1.35em;
+}
+.actions svg.active{
+    fill:rgb(255, 132, 153);
+    transform: scale(1.2);/*放大1.2倍*/
+}
+.actions > svg.act,
+.action > svg.save{
+    animation:color-me-in 0.5s;
+}
+@keyframes color-me-in{
+    0%{
+        fill:currentColor;
+    }
+    50%{
+        fill:pink;
+    }
+    100%{
+        fill:currentColor;
+    }
+}
+.icon {
+    width: 1.3em; 
+    height: 1.3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+ .colors{
+    /* position:fixed;
+     top:160px;
+     left:12px;*/
+     position:fixed;
+     top:-16px;
+     left:55px;
+ }
+
+ .colors > li{
+     width:17px;
+     height:17px;
+     border-radius:50%;
+     box-shadow: 0 0 3px rgba(0,0,0,0.2);
+     margin:28px 0;
+     transition: all 0.3s;
+ }
+ .colors > li.black{
+    background: black;
+}
+ .colors > li.red{
+     background: red;
+ }
+ .colors > li.green{
+     background:green;
+ }
+ .colors > li.pink{
+     background: pink;
+ }
+ .colors > li.blue{
+     background: blue;
+ }
+ .colors > li.active{
+    box-shadow: 0 0 3px rgba(0,0,0,0.97); 
+    transform: scale(1.2);
+ }

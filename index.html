@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的canvas画布</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_743725_yv0w4odovq.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+</head>
+
+<body>
+    <canvas id="canvas" class="canvas"></canvas>
+    <div class="container">
+        <div id="actions" class="actions">
+            <svg id="brush" class="active icon">
+                <use xlink:href="#icon-pen"></use>
+            </svg><br>
+            <svg id="thickBrush" class="icon">
+                <use xlink:href="#icon-pen1"></use>
+            </svg><br>
+            <svg id="eraser" class="icon">
+                <use xlink:href="#icon-eraser"></use>
+            </svg><br>
+            <svg id="clearAll" class="icon">
+                <use xlink:href="#icon-clear-all"></use>
+            </svg><br>
+            <svg id="save" class="icon">
+                <use xlink:href="#icon-save-copy"></use>
+            </svg>
+        </div>
+        <ol class="colors clearfix">
+            <li id="black" class="black active"></li>
+            <li id="red" class="red"></li>
+            <li id="blue" class="blue"></li>
+            <li id="green" class="green"></li>
+            <li id="pink" class="pink"></li>
+        </ol>
+    </div>
+
+
+
+
+    <script src="./canvas.js"></script>
+</body>
+
+</html>

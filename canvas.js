@@ -2,18 +2,6 @@ var canvas = document.getElementById('canvas')
 //获取画布上下文
 var context = canvas.getContext('2d')
 context.strokeStyle = 'black'
-//获取各种标签
-var eraser = document.getElementById('eraser')
-var brush = document.getElementById('brush')
-var actions = document.getElementById('actions')
-var red = document.getElementById('red')
-var pink = document.getElementById('pink')
-var blue = document.getElementById('blue')
-var green = document.getElementById('green')
-var black = document.getElementById('black')
-var thickBrush = document.getElementById('thickBrush')
-var clearAll = document.getElementById('clearAll')
-var save = document.getElementById('save')
 
 //设置画笔宽度
 var lineWidth = 2
@@ -30,8 +18,6 @@ var eraserEnabled = false
 eraser.onclick = function () {
     eraserEnabled = true
     eraser.classList.add('active')
-    /*brush.classList.remove('active')
-    thickBrush.classList.remove('active')*/
 }
 
 /******选择画笔粗细******/
@@ -143,10 +129,6 @@ function listenToUser(canvas) {
             var y = v.touches[0].clientY
             using = true
             if (eraserEnabled) {
-                var eraserDiv = document.createElement('div')
-                canvas.appendChild(eraserDiv)
-                eraserDiv.style = 'width:10px;height:10px;position:absolute;'+
-                'left:'+x+'px;top:'+y+'px;border:0.5px solid;'
                 context.clearRect(x - 5, y - 5, 10, 10)
             } else {
                 //记录上一个点的坐标
@@ -158,7 +140,6 @@ function listenToUser(canvas) {
             var y = v.touches[0].clientY
             if (!using) { return }
             if (eraserEnabled) {
-                context.strokeStyle = 'black'
                 context.clearRect(x - 10, y - 10, 20, 20)
             } else {
                 //记录第二个点的坐标
@@ -168,7 +149,6 @@ function listenToUser(canvas) {
             }
         }
         canvas.ontouchend = function (v) {
-            eraserDiv.remove()
             using = false
         }
 
